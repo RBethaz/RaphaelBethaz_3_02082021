@@ -1,0 +1,115 @@
+@media screen and (min-width: 813px)
+{
+    .bodypage
+    {
+        .top     
+        {
+            width: 100%;
+            img 
+            {
+                width: 100%;
+                height: 600px;
+            }
+            .__nom
+            {
+                padding: 5%;
+                padding-top: 3%;
+                width: 90%;
+                font-size: 2em;
+            }
+        }
+
+        .repas
+        {
+            padding-bottom: 3%;
+
+            .__plat--sautligne
+            {
+                display: none;
+            }
+
+            .entre, .plat, .dessert
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .entre
+            {     
+                animation-timing-function: ease-in;    
+                animation-name: apparitiondesktop;
+                animation-duration: 1s;
+            }
+            .plat 
+            {
+                animation-delay: 500ms;
+                animation-timing-function: ease-in;    
+                animation-name: apparitiondesktop;
+                animation-duration: 1s;
+            }
+            .dessert
+            {
+                animation-delay: 1s;
+                animation-timing-function: ease-in;    
+                animation-name: apparitiondesktop;
+                animation-duration: 1s;
+            }
+
+                .wrap
+                {
+                    width: 100%;
+                    flex-direction: column;
+
+                    article
+                    {
+                        width: 90%;
+
+                        .__prix 
+                        {
+                            padding-top: 7%;
+                        }
+                    }
+                }
+            
+
+            article
+            {
+                width: 30%;
+                height: 100px;
+
+                .__check .fa-check-circle 
+                {
+                    right: 0px;
+                }
+                .fa-check-circle 
+                {
+                    left: 0%;
+                }
+                &:hover 
+                {
+                    .__prix 
+                    {
+                        flex-shrink: 4;
+                    }
+                    .__check 
+                    {
+                        width: 20%;
+                        transition: ease-in-out 1s;            
+                        .fa-check-circle
+                        {
+                        transform: rotate(-1turn);
+                        transition: ease-in-out 1s;
+                        }
+                    }
+        
+                }
+            }
+
+            h3 
+            {
+                padding-top: 0%;
+                font-size: 2em;
+            }
+        }
+    }
+}

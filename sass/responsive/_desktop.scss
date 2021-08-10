@@ -1,0 +1,124 @@
+@media screen and (min-width: 813px)
+{
+    .chargement
+    {
+        span 
+        {
+            font-size: 3em;
+        }
+        .fas
+        {
+            font-size: 5em;
+            top: 20%;
+        }
+        .fa-fish
+        {
+            left: 30%;
+        }
+        .fa-pepper-hot
+        {
+            left: 60%;
+        }
+    }
+    header h1 
+    {
+        font-size: 4em;
+        line-height: 0;
+    }
+
+    .exploration
+    {
+        .__search
+        {
+            padding: 2%;
+
+            .fa-map-marker-alt
+            {
+                margin: 0;
+            }
+            input 
+            {
+                padding-left: 1%;
+            }
+        }
+
+        .__concept
+        {
+            padding-top: 1%;
+            h2 
+            {
+                padding: 1%;
+                margin: 0;
+            }
+            .__concept--sautligne
+            {
+                display: none;
+            }
+        }
+    }
+    .fonctionnement
+    {
+        h2 
+        {
+            margin: 3%;
+            margin-left: 5%;
+        }
+        .__box
+        {
+            display: flex;
+            margin-right: 5%;
+            .__box--element
+            {
+                width: 30%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+
+                .fa-mobile-alt
+                {
+                    display: none;
+                }
+                .fa-desktop
+                {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .restaurant
+    {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .__box
+        {
+            display: flex;
+            margin-right: 5%;
+        }
+    }
+
+    footer 
+    {
+        padding-bottom: 2%;
+
+        h4 
+        {
+            padding-top: 2%;
+            margin: 1%;
+            margin-left: 5%;
+            margin-top: 0;
+        }
+
+        .fas 
+        {
+            display: none;
+        }
+        nav 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 5%;
+        }
+    } 
+}
