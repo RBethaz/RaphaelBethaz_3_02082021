@@ -1,0 +1,28 @@
+.top
+{
+    overflow: hidden;
+    position: relative;
+    img
+    {
+        width: 414px;
+        height: 300px;
+        object-fit: cover;  
+    }
+    .__nom
+    {
+        position: absolute;
+        border-radius: 40px;
+        background-color: $couleur-fontclaire;
+        padding-top: 9%;
+        padding-bottom: 12%;
+        margin: 0;
+        bottom: -10%;
+        width: 100%;
+    }
+    h2
+    {
+        font-family: $font-titre;
+        margin-left: 3%;
+        font-size: 1.9em;
+    }
+}

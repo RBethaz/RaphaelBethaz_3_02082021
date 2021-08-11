@@ -1,0 +1,56 @@
+.coeurrempli
+{
+    color: transparent;
+    background: $degrade;
+    position: absolute;
+    font-size: 1.7em;
+    z-index: 1;
+}
+.calque
+{
+    position: absolute;
+    font-size: 1.7em;
+    z-index: 2;
+    color: white;
+    background-color: white;
+    transition: transform 1s;
+    transform-origin: center top;
+}
+.coeurvide
+{
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    font-size: 1.7em;
+    z-index: 3;
+        &:hover + .calque
+        {
+        transform: scaleY(0);
+        }
+        &:hover
+        {
+            opacity: 0;  
+        }
+}
+.restaurant
+{
+    .coeurvide, .calque, .coeurrempli
+    {
+        right: 15%;
+        bottom: 35%;
+    }
+
+}
+.top
+{
+    .coeurvide, .calque, .coeurrempli
+    {
+        right: 10%;
+        bottom: 45%;
+    }    
+    .calque
+    {
+        color: $couleur-fontclaire;
+        background-color: $couleur-fontclaire;
+    }
+}
