@@ -1,0 +1,119 @@
+.repas
+{
+    background-color: $couleur-fontclaire;
+    padding: 3%;
+    padding-bottom: 10%;
+
+    .entre
+    {
+    animation-timing-function: ease-in;    
+    animation-name: apparition;
+    animation-duration: 2s;
+    }
+    .plat 
+    {
+        animation-delay: 500ms;
+        animation-timing-function: ease-in;    
+        animation-name: apparition;
+        animation-duration: 2s;
+    }
+    .dessert
+    {
+        animation-delay: 1s;
+        animation-timing-function: ease-in;    
+        animation-name: apparition;
+        animation-duration: 2s;
+    }
+    h3
+    {
+        padding-top: 5%;
+        border-bottom: $couleur-fontclaire solid;
+        padding-bottom: 1%;
+        span
+        {
+            border-bottom: $couleur-tertiaire solid;
+            padding-bottom: 1%;
+        }
+    }
+    h4
+    {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    article
+    {
+        background-color: white;
+        border-radius: 20px;
+        height: 90px;
+        overflow: hidden;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        box-shadow: $couleur-ombre 1px 3px 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .__plat 
+        {
+            width: 80%;
+            margin-left: 3%;
+            font-size: 0.86em;   
+        }
+        .__plat, .__plat h4 
+        {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .__prix 
+        {
+            text-align: center;
+            width: 20%;
+            padding-top: 10%;
+            font-weight: bold;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        .__check 
+        {
+            height: 100%;
+            width: 0%;
+            background-color: $couleur-tertiaire;
+            text-align: center;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+
+            .fa-check-circle
+            {
+                color: white;
+                font-size: 2em;   
+                position: absolute;
+                left: 30%;
+            }
+        }
+        &:hover 
+        {
+            .__prix 
+            {
+                flex-shrink: 4;
+            }
+            .__check 
+            {
+                width: 25%;
+                transition: ease-in-out 1s;            
+                .fa-check-circle
+                {
+                transform: rotate(-1turn);
+                transition: ease-in-out 1s;
+                }
+            }
+
+        }
+    }
+}

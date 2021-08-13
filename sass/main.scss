@@ -8,6 +8,10 @@
 
 @import "layout/pages/_body.scss";
 @import "layout/pages/_top.scss";
+@import "layout/pages/section";
+
+@import "layout/_search.scss";
+@import "layout/_footer.scss";
 
 @import "responsive/_desktop.scss";
 @import "responsive/_desktoppage.scss";

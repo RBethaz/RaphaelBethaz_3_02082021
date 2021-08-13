@@ -229,6 +229,149 @@
   font-size: 1.9em;
 }
 
+.repas {
+  background-color: #f6f6f6;
+  padding: 3%;
+  padding-bottom: 10%;
+}
+.repas .entre {
+  animation-timing-function: ease-in;
+  animation-name: apparition;
+  animation-duration: 2s;
+}
+.repas .plat {
+  animation-delay: 500ms;
+  animation-timing-function: ease-in;
+  animation-name: apparition;
+  animation-duration: 2s;
+}
+.repas .dessert {
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-name: apparition;
+  animation-duration: 2s;
+}
+.repas h3 {
+  padding-top: 5%;
+  border-bottom: #f6f6f6 solid;
+  padding-bottom: 1%;
+}
+.repas h3 span {
+  border-bottom: #99E2D0 solid;
+  padding-bottom: 1%;
+}
+.repas h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.repas article {
+  background-color: white;
+  border-radius: 20px;
+  height: 90px;
+  overflow: hidden;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  box-shadow: #818181 1px 3px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.repas article .__plat {
+  width: 80%;
+  margin-left: 3%;
+  font-size: 0.86em;
+}
+.repas article .__plat, .repas article .__plat h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.repas article .__prix {
+  text-align: center;
+  width: 20%;
+  padding-top: 10%;
+  font-weight: bold;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.repas article .__check {
+  height: 100%;
+  width: 0%;
+  background-color: #99E2D0;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.repas article .__check .fa-check-circle {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  left: 30%;
+}
+.repas article:hover .__prix {
+  flex-shrink: 4;
+}
+.repas article:hover .__check {
+  width: 25%;
+  transition: ease-in-out 1s;
+}
+.repas article:hover .__check .fa-check-circle {
+  transform: rotate(-1turn);
+  transition: ease-in-out 1s;
+}
+
+.__search {
+  background-color: #ebe8e8;
+  padding: 5%;
+  text-align: center;
+}
+.__search .fa-map-marker-alt {
+  font-size: 1.3em;
+  margin-left: 15%;
+  color: #222222;
+}
+.__search input {
+  border: none;
+  font-size: 1.3em;
+  padding-left: 5%;
+}
+
+footer {
+  background-color: #353535;
+  padding-bottom: 5%;
+}
+footer h4 {
+  font-family: "shrikhand";
+  color: white;
+  margin: 5%;
+  font-size: 1.2em;
+  padding-top: 5%;
+  margin-top: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+footer .fas {
+  color: white;
+  padding-right: 2%;
+}
+footer nav {
+  list-style: none;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+footer strong, footer a {
+  color: white;
+  line-height: 30px;
+}
+footer strong {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 813px) {
   .chargement span {
     font-size: 3em;
