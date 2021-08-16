@@ -386,6 +386,49 @@ footer strong {
   padding: 5%;
 }
 
+.restaurant {
+  background-color: #f8f8f8;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+.restaurant h2 {
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+.restaurant .__box article {
+  margin-left: 5%;
+  width: 340px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 5%;
+  box-shadow: #818181 2px 3px 3px;
+}
+.restaurant .__box em {
+  position: absolute;
+  z-index: 1;
+  background-color: #99E2D0;
+  right: 5%;
+  top: 5%;
+  border-radius: 5px;
+  padding: 3%;
+  font-style: normal;
+  font-weight: 900;
+  color: #278870;
+}
+.restaurant .__box .__box--detail {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 5%;
+}
+.restaurant .__box .__box--detail h3 {
+  padding-bottom: 3%;
+}
+
 @media screen and (min-width: 813px) {
   .chargement span {
     font-size: 3em;
