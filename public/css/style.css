@@ -372,6 +372,20 @@ footer strong {
   font-weight: bold;
 }
 
+.__concept {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 1.2em;
+  color: grey;
+}
+.__concept h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 5%;
+  padding: 5%;
+}
+
 @media screen and (min-width: 813px) {
   .chargement span {
     font-size: 3em;
