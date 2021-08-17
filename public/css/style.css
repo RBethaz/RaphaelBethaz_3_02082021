@@ -429,6 +429,67 @@ footer strong {
   padding-bottom: 3%;
 }
 
+.main {
+  animation-name: font;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+.chargement {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  animation-name: disparition;
+  animation-fill-mode: forwards;
+  animation-duration: 0s;
+  animation-delay: 3s;
+  z-index: 2;
+}
+.chargement .fas {
+  position: relative;
+  color: #9356DC;
+  font-size: 3em;
+}
+.chargement .fa-fish {
+  top: 30%;
+  left: 20%;
+  animation-name: poisson;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.chargement .fa-pepper-hot {
+  top: 30%;
+  left: 55%;
+  animation-name: piment;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.chargement .__ohmyfood {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
+}
+.chargement .__ohmyfood .__ohmyfood--ohmy {
+  animation-name: coloration;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  padding: 1%;
+  font-family: "shrikhand";
+}
+.chargement .__ohmyfood .__ohmyfood--food {
+  animation-name: coloration;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  padding: 1%;
+  font-family: "shrikhand";
+}
+
 @media screen and (min-width: 813px) {
   .chargement span {
     font-size: 3em;
