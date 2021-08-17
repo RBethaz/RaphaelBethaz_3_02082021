@@ -1,0 +1,42 @@
+.fonctionnement
+{
+    h2
+    {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    .__box--element
+    {
+        border-radius: 20px;
+        box-shadow: $couleur-ombre 2px 3px 3px;
+        font-size: 1.2em;
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        margin-bottom: 5%;
+        background-color: $couleur-fontclaire;
+        font-weight: 900;
+        mark
+        {
+            color: white;
+            background-color: $couleur-primaire;
+            padding: 5px;
+            border-radius: 50%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .fas
+        {
+            margin-left: 5%;
+            margin-right: 5%;
+            color: grey;
+        }
+        .fa-desktop
+        {
+            display: none;
+        }
+        
+    }
+}
