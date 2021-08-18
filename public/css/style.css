@@ -531,6 +531,24 @@ footer strong {
 .fonctionnement .__box--element .fa-desktop {
   display: none;
 }
+.fonctionnement .__box--choix:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+.fonctionnement .__box--choix:hover .fa-mobile-alt, .fonctionnement .__box--choix:hover .fa-desktop {
+  color: #9356DC;
+}
+.fonctionnement .__box--compose:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+.fonctionnement .__box--compose:hover .fa-list-ul {
+  color: #9356DC;
+}
+.fonctionnement .__box--deguste:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+.fonctionnement .__box--deguste:hover .fa-store {
+  color: #9356DC;
+}
 
 @media screen and (min-width: 813px) {
   .chargement span {

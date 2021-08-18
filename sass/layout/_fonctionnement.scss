@@ -39,4 +39,40 @@
         }
         
     }
+    .__box--choix
+    {
+        &:hover
+        {
+            background-color: rgba($couleur-primaire, 0.30);
+        
+        .fa-mobile-alt, .fa-desktop
+        {
+            color: $couleur-primaire;
+        }
+        }
+    }
+    .__box--compose
+    {
+        &:hover
+        {
+            background-color: rgba($couleur-primaire, 0.30);
+        
+        .fa-list-ul
+        {
+            color: $couleur-primaire;
+        }
+        }
+    }
+    .__box--deguste
+    {
+        &:hover
+        {
+            background-color: rgba($couleur-primaire, 0.30);
+        
+        .fa-store
+        {
+            color: $couleur-primaire;
+        }
+        }
+    }
 }
