@@ -550,6 +550,23 @@ footer strong {
   color: #9356DC;
 }
 
+header {
+  box-shadow: #818181 0px 2px 5px;
+  padding: 5%;
+  position: relative;
+}
+header a {
+  position: absolute;
+  top: 40%;
+}
+header h1 {
+  font-family: "shrikhand";
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
+}
+
 @media screen and (min-width: 813px) {
   .chargement span {
     font-size: 3em;
