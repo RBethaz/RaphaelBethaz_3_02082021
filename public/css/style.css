@@ -202,11 +202,11 @@
 
 @font-face {
   font-family: "shrikhand";
-  src: url(../public/police/shrikhand/Shrikhand-Regular.otf);
+  src: url(../../public/police/shrikhand/Shrikhand-Regular.otf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(public/police/Roboto/Roboto-Regular.ttf) format("truetype");
+  src: url(../../public/police/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 .bodypage {
   background-color: #f6f6f6;
