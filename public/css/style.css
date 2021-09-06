@@ -154,50 +154,44 @@
   object-position: -15px -70px;
 }
 
-.coeurrempli {
-  color: transparent;
+.heart-container {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.heart-stroke {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  fill: black;
+}
+
+.heart-clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: path("M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z");
+}
+.heart-clip:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+.heart-clip::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  position: absolute;
-  font-size: 1.7em;
-  z-index: 1;
-}
-
-.calque {
-  position: absolute;
-  font-size: 1.7em;
-  z-index: 2;
-  color: white;
-  background-color: white;
-  transition: transform 1s;
-  transform-origin: center top;
-}
-
-.coeurvide {
-  color: black;
-  background-color: transparent;
-  position: absolute;
-  font-size: 1.7em;
-  z-index: 3;
-}
-.coeurvide:hover + .calque {
-  transform: scaleY(0);
-}
-.coeurvide:hover {
   opacity: 0;
-}
-
-.restaurant .coeurvide, .restaurant .calque, .restaurant .coeurrempli {
-  right: 15%;
-  bottom: 35%;
-}
-
-.top .coeurvide, .top .calque, .top .coeurrempli {
-  right: 10%;
-  bottom: 45%;
-}
-.top .calque {
-  color: #f6f6f6;
-  background-color: #f6f6f6;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transform-origin: center 60%;
 }
 
 @font-face {
