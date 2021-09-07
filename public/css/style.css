@@ -156,8 +156,6 @@
 
 .heart-container {
   position: absolute;
-  top: 30px;
-  right: 40px;
   width: 40px;
   height: 40px;
 }
@@ -192,6 +190,16 @@
   transform: scale(0);
   transition: transform 0.2s linear, opacity 0.2s linear;
   transform-origin: center 60%;
+}
+
+.restaurant .heart-container {
+  right: 15%;
+  bottom: 35%;
+}
+
+.top .heart-container {
+  right: 5%;
+  bottom: 45%;
 }
 
 @font-face {
